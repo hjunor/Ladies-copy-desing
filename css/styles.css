@@ -1,0 +1,542 @@
+/* Reset css */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(//db.onlinewebfonts.com/c/0bbba3e6da511a469bc943bdf02310e7?family=Lucida+Grande);
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Header */
+
+.nav {
+  max-width: 1714px;
+  height: 72px;
+  margin: 0 auto;
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  width: 38%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag {
+  height: 32px;
+  width: 26px;
+}
+
+.nav-input {
+  height: 50px;
+  border: 1px solid #e7e7e7;
+  border-radius: 24px;
+  width: 400px;
+  background: url("/assets/search.svg") no-repeat scroll 390px 14px;
+  padding-left: 30px;
+  color: #473889, 100%;
+  size: 27px;
+}
+
+.nav-input::-webkit-input-placeholder {
+  color: #473889;
+  font-size: 16px;
+}
+
+.menu {
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  background-color: #ebe5f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1714px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.block-left {
+  position: absolute;
+  left: -81px;
+  right: 61.07%;
+  top: -110px;
+  z-index: -1;
+  bottom: -0.57%;
+  width: 800px;
+  background: #e5f6ff;
+  border-radius: 56px;
+}
+
+.block-left::after {
+  content: "";
+  position: absolute;
+  left: 70%;
+  right: 50.5%;
+  top: -1px;
+  width: 400px;
+  bottom: -0.57%;
+  z-index: -1;
+  border-radius: 0 56px 56px 0;
+  background: #e5f6ff;
+  transform: skew(-10deg, 0deg);
+}
+
+.container-block-left {
+  position: absolute;
+  width: 800px;
+  height: 900px;
+  top: 140px;
+  left: 81px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-title {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 92px;
+  /* identical to box height */
+  color: #473889;
+}
+
+.svg-box {
+  -webkit-box-shadow: 0px 22px 30px -6px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 22px 30px -6px rgba(0, 0, 0, 0.32);
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.container-cards {
+  margin-top: 72px;
+  height: 689px;
+  width: 200vh;
+  display: flex;
+}
+
+.cards {
+  box-shadow: 0px 43px 36px -13px rgba(0, 0, 0, 0.36); /* box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.32); */
+
+  margin-right: 40px;
+  height: 640px;
+  width: 398px;
+  background: #ffffff;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blur {
+  margin-top: 100px;
+  width: 160px;
+  height: 284px;
+}
+
+.botton-card {
+  margin-top: 86px;
+  width: 382px;
+  height: 160px;
+  background: #776fc3;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-p {
+  padding: 37px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.title-face {
+  margin-top: -2px;
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.grape {
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #c9c4ff;
+}
+
+.price {
+  margin-top: 22px;
+  font-family: Lucida Grande, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.up {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 14px;
+  background: #574a97;
+  font-size: 30px;
+  margin-top: 80px;
+
+  color: #ffffff;
+}
+
+.block-right {
+  position: absolute;
+  right: 0;
+  width: 680px;
+  height: 700px;
+}
+
+.block-right::before {
+  position: absolute;
+  z-index: -1;
+  filter: blur(100px);
+  content: "oi";
+  width: 680px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.arrow-acessories {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.btn {
+  background-color: #ffffff;
+  border: none;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  border: 1px solid #e7e7e7;
+}
+
+.svg-btn path {
+  stroke: #e7ddf2;
+}
+
+.btn:hover .svg-btn {
+  stroke: #464185;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+.rotate90 {
+  transform: rotate(-90deg);
+}
+
+.acessories {
+  margin-top: 30px;
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #473889;
+}
+.card-acessories {
+  margin: 40px 0 0 238px;
+  width: 440px;
+  height: 184px;
+  border: 2px solid #e7e7e7;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.7s ease;
+}
+
+.card-acessories:hover {
+  transform: translate3d(0, -6px, 0);
+}
+.card-acessories-long:hover {
+  transform: translate3d(0, -6px, 0);
+}
+.card-acessories-long {
+  width: 490px;
+  height: 184px;
+  margin: 40px 0 0 186px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  transition: 0.7s ease;
+  justify-content: space-around;
+  background-color: #776fc3;
+}
+
+.price-acessories {
+  width: 138px;
+  background-color: #574a97;
+  height: 52px;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-title {
+  font-family: Lucida Grande, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.list-acessories {
+  height: 100vh;
+}
+
+.title-acessories {
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: #473889;
+}
+
+.title-acessories-long {
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.just {
+  justify-content: center;
+}
+
+.aling-itens {
+  align-items: center;
+}
+
+.margin-price {
+  margin: 0 0 0 -80px;
+}
+.br {
+  border: 1px solid red;
+}
+.container-img {
+  background-color: #776fc3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-img-long {
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-acessories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70px;
+}
+
+.title-midle {
+  color: #5e5875;
+
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.title-midle-long {
+  color: #ffffff;
+
+  font-family: GT Walsheim Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
